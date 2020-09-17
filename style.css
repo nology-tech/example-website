@@ -10,7 +10,7 @@ body {
     background-color: #eeeeee;
 }
 
-header, section {
+header {
     height: 600px;
 }
 
@@ -52,11 +52,30 @@ h1 {
     font-size: 50px;
 }
 
+section {
+    padding: 50 200px;
+}
+
 section:first-of-type {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+section:last-of-type {
+    height: 800px;
     background-color: #fe938c;
+}
+
+.shadow {
+     -webkit-box-shadow: 10px 11px 15px -6px rgba(51, 51, 51, 1);
+     -moz-box-shadow: 10px 11px 15px -6px rgba(51, 51, 51, 1);
+     box-shadow: 10px 11px 15px -6px rgba(51, 51, 51, 1);
+}
+
+.reverse {
+    flex-direction: row-reverse;
 }
 
 .card {
@@ -66,15 +85,36 @@ section:first-of-type {
     justify-content: space-around;
     width: 270px;
     height: 400px;
-    background-color: #eeeeee;
+    background-color: #333333;
+    color: #eeeeee;
     text-align: center;
-    -webkit-box-shadow: 10px 11px 15px -6px rgba(51, 51, 51, 1);
-    -moz-box-shadow: 10px 11px 15px -6px rgba(51, 51, 51, 1);
-    box-shadow: 10px 11px 15px -6px rgba(51, 51, 51, 1);
+    border-radius: 2px;
+    margin: 20px;
+}
+
+.card p {
+    padding: 30px;
+}
+
+.item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item p {
+    width: 400px;
+    text-align: justify;
+    padding: 20px;
+    background-color: white;
     border-radius: 2px;
 }
 
 footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 200px;
     background-color: #333333;
+    color: #eeeeee;
 }
